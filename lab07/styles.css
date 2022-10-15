@@ -1,0 +1,6 @@
+body {background-color: #F9F2E7; color: #000000}
+a {color: #F9F2E7}
+h1 {color: #40C0CB;}
+nav {content: "|"; background-color: #00A8C6; padding: 10px;}
+nav a {color: #AEE239;}
+nav a:hover {background-color: #F9F2E7;}
