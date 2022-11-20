@@ -1,0 +1,96 @@
+        body {font-family: "Georgia", serif;}
+        .header {
+            background-color: rgb(13, 13, 85);
+            color: #ffffff;
+            border: rgb(13, 13, 85) dashed 1px;
+            justify-content: space-between;
+        }
+        .title {
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+        .navs {
+            background-color: rgb(13, 13, 85);
+            display: flex;
+            justify-content: flex-end;
+            padding: 5px;
+        }
+        .navs a {
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .images1, .images2, .leftflex, .leftflex2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+            }
+        .righttop, .rightbot, .righttop2, .rightbot2 {
+            display: flex;
+            padding: 15px;
+            flex-wrap: wrap;
+        }
+        .rightbot {
+            padding-top: 26px;
+        }
+        .rightbot2 {
+            padding-top: 33px;
+        }
+        .righttop, .righttop2 {
+            padding-top: 10px;
+        }
+        @media only screen and (max-width: 1322px) {
+            .righttop, .rightbot, .righttop2, .rightbot2 {
+                display: inline;
+            }
+        }
+        .section1, .section2 {
+                flex-wrap: wrap;
+                display: flex;
+                justify-content: center;
+                color: #ffffff;
+                padding: 10px;
+            }
+        .section1 {
+            background-image: url(../images/projectPics/p4-banner.png);
+        }
+        .section2 {
+            background-image: url(../images/projectPics/i2-banner.png);
+        }
+        .welcome {
+            padding-right: 85px;
+            padding-left: 85px;
+        }
+        .section2 a, .section1 a {
+            display: flex;
+            justify-content: center ;
+            color: #ffffff;
+        }
+        .footertop {
+            display: flex;
+            background-color: rgb(13, 13, 85);
+            color: white;
+            justify-content: space-between;
+        }
+        .infol1, .infol2, .infol3, .infol4 {
+            display: flex;
+            justify-content: flex-end;
+            padding: 5px;
+        }
+        .sblogo {
+            padding: 10px;
+        }
+        .footerbot {
+            background-color: rgb(13, 13, 85);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        .gototop {
+            padding: 10px;
+            padding-left: 45px;
+        }
+        .info {
+            padding: 10px;
+        }
