@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <!--
+        CSS
+        1. Large page = no hamburger + Side by side links + no X
+        2. Small page = hamburger + Stacked links
+        3. When screen is small hide links
+
+
+        JavaScript
+        3. Press Hamburger = show stacked nav
+        4. Press X = hide stacked nav
+    -->
+    <script>
+        function showNav () {
+            document.getElementById("navlinks").style.display = "block";
+        }
+        function hideNave () {
+            document.getElementById("navlinks").style.display = "none";
+        }
+    </script>
+    <style>
+        #close {
+            display: none;
+        }
+        #hamicon {
+            display: none;
+            width: 50px;
+        }
+        .row {
+            display: flex;
+            padding-left: 5px;
+        }
+        @media only screen and (max-width: 800px) {
+            #hamicon {display: block;}
+            #navlinks a {display: block;}
+            #navlinks {display: none;}
+            #close {display: block;}
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div><img src="https://laferger.github.io/ist263/images/hamburger.png" id="hamicon" onclick="showNav();"></div>
+        <div><p id="close" onclick="hideNave();">X</p></div>
+    </div>
+    <div id="navlinks">
+        <a href="">Home</a>
+        <a href="">Skills</a>
+        <a href="">Content</a>
+    </div>
+</body>
+</html>
