@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steinmetz Bros Portfolio</title>
     <link rel="stylesheet" href="website-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="website-styles.css">
+    <script src="website-javascript.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header">
-            <div class="title"><h1>Steinmetz Bros</h1></div>
-        </div>
-    </header>
+    <div class="header">
+        <div class="title"><img src="../images/projectPics/sb-Header.png" alt="Steinmetz Bros Logo"></div>
         <nav>
-            <div class="Navigation">
+            <div class="navs">
                 <a href="skeleton_site_pg1.html">Home</a>
                 <a href="skeleton_site_pg2.html">About Us</a>
                 <a href="skeleton_site_pg3.html">Portfolio</a>
             </div>
         </nav>
+    </div>
+</header>
     <div class="section1">
         <div class="portfolio">
             <h2>Portfolio</h2>
@@ -59,7 +63,7 @@
         <div class="footerbot">
             <div class=gttbutton>
                 <div class="gototop">
-                    <p>Go to top</p>
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
                 </div>
             </div>
         </div>
