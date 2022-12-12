@@ -193,7 +193,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 70px;
-            text-shadow: rgb(13, 13, 85) 2px 0 2px;
+            text-shadow: rgb(13, 13, 85) 0 0 5px;
         }
         .aboutUs img {
             max-width: 100%;
