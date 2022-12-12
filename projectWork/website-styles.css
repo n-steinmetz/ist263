@@ -163,6 +163,7 @@
         }
         .johnImage {
             float: right;
+            padding-top: 20px;
             padding-right: 20px;
             padding-bottom: 30px;
         }
@@ -182,12 +183,20 @@
             clear: both;
         }
         .aboutUs {
-            display: flex;
-            justify-content: center;
-            font-size: 30px;
-            background-image: url(../images/projectPics/about-us-banner.png);
-            color: #ffffff;
-            padding: 120px;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .centered {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 70px;
+            text-shadow: rgb(13, 13, 85) 1px 1px;
+        }
+        .aboutUs img {
+            max-width: 100%;
         }
         .ourStory {
             display: flex;
@@ -206,9 +215,6 @@
             display: inline;
             font-size: 50px;
             text-decoration: underline;
-        }
-        .story-o {
-            display: inline;
         }
         /*Page3 CSS*/
         .portfolio {
@@ -254,6 +260,8 @@
         position: relative;
         margin: auto;
         padding: 40px;
+        padding-top: 0px;
+        padding-bottom: 0px;
         }
 
         .slideshow-container img {
@@ -277,6 +285,7 @@
 
         /* Position the "next button" to the right */
         .next {
+        margin-right: 40px;
         right: 0;
         border-radius: 3px 0 0 3px;
         }
