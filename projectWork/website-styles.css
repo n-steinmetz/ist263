@@ -80,6 +80,7 @@
                 flex-wrap: wrap;
                 display: flex;
                 justify-content: center;
+                text-align: center;
                 color: #ffffff;
                 padding: 10px;
             }
@@ -135,7 +136,9 @@
         .info {
             padding: 10px;
         }
-        /*info page css below*/
+
+    /* About Us Page Styles */
+
         .page2 {
             color: rgb(13, 13, 85);
         }
@@ -181,16 +184,6 @@
         }
         .johnImage img {
             max-width: 100%;
-        }
-        @media only screen and (max-width: 500px){
-            .johnImage, .nickImage {
-                float: none;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            .johnInfo {
-                padding-top: 0px;
-            }
         }
         .johnInfo {
             padding-top: 15px;
@@ -241,7 +234,41 @@
             font-size: 50px;
             text-decoration: underline;
         }
-        /*Page3 CSS*/
+        @media only screen and (max-width: 900px) {
+            .nickInfo, .johnInfo {
+                display: inline-block;
+            }
+            .johnImage, .nickImage {
+                float: none;
+                display: flex;
+                justify-content: center;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .nick, .john {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .aboutUsImage {
+                display: none;
+            }
+            .aboutUs {
+                display: flex;
+                justify-content: center;
+                font-size: 30px;
+                background-image: url(../images/projectPics/ourHouseBanner.jpg);
+                color: #ffffff;
+                padding: 120px;
+            }
+            .centered {
+                top: 20%;
+            }
+        }
+
+    /* Porfolio Page Styles */
+
         .portfolio {
             flex-wrap: wrap;
             text-align: center;
@@ -382,7 +409,9 @@
                 background-color: #717171;
                 }
         }
-        /*Contact Page Styles*/
+
+    /*Contact Page Styles*/
+
         .name, #subject, #email, #message {
             width: 50vw;
             font-size: 12px;
@@ -422,4 +451,38 @@
         }
         #name2 {
             margin: 8px 5px;
+        }
+        .smallImage{
+            display: none;
+        }
+        @media only screen and (max-width: 800px) {
+            .contactFlex {
+                display: inline-block;
+            }
+            .smallImage {
+                padding: 20px;
+                padding-bottom: 0px;
+                display: flex;
+                justify-content: center;
+            }
+            .bigImage {
+                display: none;
+            }
+            .nameBtn , #subject, #email, #message {
+                width: 100vw;
+            }
+            #name2 {
+                margin: 8px 40px;
+            }
+        }
+        @media only screen and (max-width: 450px) {
+            .nameBtn {
+                display: inline-block;
+            }
+            .name {
+                width: 90vw;
+            }
+            #name2 {
+                margin: 8px 0;
+            }
         }
