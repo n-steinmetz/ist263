@@ -22,7 +22,8 @@
             background-color: rgb(13, 13, 85);
             display: flex;
             justify-content: flex-end;
-            padding: 5px;
+            padding-right: 10px;
+            padding-bottom: 5px;
         }
         .navs a {
             color: white;
@@ -48,10 +49,7 @@
             padding-top: 29px;
         }
         .rightbot2 {
-            padding-top: 33px;
-        }
-        .righttop, .righttop2 {
-            padding-top: 10px;
+            padding-top: 21px;
         }
         .bigPic, .bigPic2 {
             width: 850px;
@@ -60,13 +58,22 @@
         .smallTop, .smallBottom, .smallTop2, .smallBottom2 {
             max-width: 400px;
         }
-        @media only screen and (max-width: 1322px) {
+        @media only screen and (max-width: 1330px) {
+            .righttop, .rightbot, .righttop2, .rightbot2 {
+                display: inline;
+                padding: 22px;
+            }
+        }
+        @media only screen and (max-width: 915px) {
             .righttop, .rightbot, .righttop2, .rightbot2 {
                 display: block;
                 padding-top: 10px;
             }
             .righttop img, .rightbot img, .righttop2 img, .rightbot2 img {
                 max-width: 100%;
+            }
+            .leftflex, .leftflex2 {
+                padding: 18px;
             }
         }
         .welcome-section, .covered-section {
@@ -106,6 +113,7 @@
         }
         .sblogo {
             padding: 10px;
+            width: 150px;
         }
         .footerbot {
             background-color: rgb(13, 13, 85);
@@ -115,7 +123,7 @@
         }
         .gototop {
             padding: 10px;
-            padding-left: 40px;
+            padding-left: 30px;
             padding-bottom: 20px;
         }
         .gttbutton {
@@ -250,7 +258,7 @@
         }
         .mainflex img {
             max-width: 100%;
-            width: 500px;
+            width: 1500px;
             padding: 20px;
         }
         .row1, .row2, .row3, .row4, .row5{
@@ -259,14 +267,14 @@
             max-width: 100%;
         }
         .row1 img, .row3 img, .row5 img, .row5 video{
-            width: 1000px;
+            width: 1500px;
         }
         video {
             max-width: 100%;
             height: auto;
             padding: 20px;
         }
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 600px) {
             .row1, .row2, .row3, .row4, .row5 {
                 display: block;
             }
@@ -331,7 +339,6 @@
         }
         .thumbnail {
             cursor: pointer;
-            height: 55px;
             width: 80px;
             margin: 0 2px;
         }
@@ -367,9 +374,52 @@
                 justify-content: center;
                 padding-bottom: 20px;
             }
+            .dot {
+                margin: 0 3px;
+            }
             .active, .dot:hover {
                 box-shadow: #717171;
                 background-color: #717171;
                 }
         }
-
+        /*Contact Page Styles*/
+        .name, #subject, #email, #message {
+            width: 50vw;
+            font-size: 12px;
+            max-width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .contactIMG {
+            width: 500px;
+            max-width: 100%;
+        }
+        .contactFlex {
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 100%;
+        }
+        .infoFlex, .formFlex {
+            padding: 20px;
+        }
+        .submitBtn {
+            width: 80px;
+            height: 30px;
+            border-radius: 20px;
+            font-size: 14px;
+            background-color: rgb(13, 13, 85);
+            color: #ffffff;
+            border-color: rgb(13, 13, 85);
+        }
+        .nameBtn {
+            width: 50vw;
+            display: flex;
+            justify-content: space-between;
+        }
+        #name2 {
+            margin: 8px 5px;
+        }
