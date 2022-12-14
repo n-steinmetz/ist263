@@ -183,6 +183,7 @@
             padding-bottom: 30px;
         }
         .johnImage img {
+            width: 380px;
             max-width: 100%;
         }
         .johnInfo {
