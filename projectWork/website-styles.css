@@ -111,6 +111,7 @@
             display: flex;
             justify-content: flex-end;
             padding: 5px;
+            text-align: end;
         }
         .sblogo {
             padding: 10px;
