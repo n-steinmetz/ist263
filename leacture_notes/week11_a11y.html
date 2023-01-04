@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <style>
+        #skip {
+            background-color: orange;
+            border: 1px solid navy;
+            padding: 3px;
+            position: absolute;
+            left: -999px; /* left works with position to move off screen */
+        }
+        /*position lets it appear floating - check documentation*/
+        #skip:focus{ /* pseudo selector to appear when tabbed on*/
+            left: 10px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a id="skip" href="#content" tabindex="4">Skip to content</a><br> <!--ID used to bookmark to lower in the page-->
+    <a href="http://www.syr.edu" tabindex="3">SU</a>
+    <a href="http://www.Amazon.com" tabindex="2">Amazon</a>
+    <a href="http://www.Google.com" tabindex="1">Google</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque officiis possimus consectetur iusto provident! Assumenda commodi temporibus, hic unde minus nostrum animi laborum in non neque voluptas cupiditate eius enim.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iusto tempora architecto quaerat ipsa soluta rem mollitia odit amet nostrum, aut illo corrupti quos atque numquam. Officiis expedita dolores ab!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci doloribus, ad nobis laudantium sit ipsa ullam consequatur aliquam dolore cumque enim quo assumenda, consectetur eos temporibus placeat, maiores aperiam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta earum cum iusto odio dolore temporibus fuga perspiciatis! Repellendus cupiditate distinctio maiores recusandae accusantium! Asperiores corporis iste dolores repellendus perferendis veritatis.</p>
+    <p id="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore molestias porro laboriosam ut, eligendi inventore omnis magni placeat, quis ipsum eos esse quibusdam sapiente delectus saepe accusantium quae ipsa architecto!</p>
+
+</body>
+</html>

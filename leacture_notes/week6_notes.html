@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 CSS Notes</title>
+    <!--Embeded sytle sheet below!-->
+    <style>
+        /* These are how you make notes in CSS */
+        /* Grouped Slector */
+        p, ul {
+            color:rebeccapurple;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+        }
+        /* decendant selector/ no comma */
+        /* all the a tags within a paragraph*/
+        p a {
+            color: salmon;
+        }
+        /* # used for an id*/
+        #paragraph1 {color: dodgerblue;}
+        /* . used for an class*/
+        .greentext {color: seagreen}
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.Amazon.com">Amazon</a>
+    <!--Each ID gotta be unique-->
+    <p id="paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="http://www.Google.com">Google</a> Sunt fugit rerum omnis error quae eveniet iusto quidem magni repellendus dolorum, voluptate possimus perspiciatis neque praesentium sit explicabo consequuntur libero quibusdam?</p>
+    <ul>
+        <li class="greentext">Green Eggs</li>
+        <li>Ham</li>
+    </ul>
+    <p>Green Egss and Ham is my favorite food!</p>
+    <p class="greentext">You should give it a try some time</p>
+</body>
+</html>

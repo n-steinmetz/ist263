@@ -5,5 +5,10 @@ nav {content: "|";
     background-color: #00A8C6; 
     padding: 10px; 
     margin-bottom: 30px;}
-nav a {color: #AEE239;}
-nav a:hover {background-color: #F9F2E7;}
+nav a {color: #F9F2E7;}
+nav a:hover {background-color: #AEE239;}
+.header {
+    display: flex;
+    justify-content: center;
+}
+i {width: 50px;}

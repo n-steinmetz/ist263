@@ -111,7 +111,7 @@
             display: flex;
             justify-content: flex-end;
             padding: 5px;
-            text-align: end;
+            text-align: ;
         }
         .sblogo {
             padding: 10px;
@@ -470,11 +470,11 @@
             .bigImage {
                 display: none;
             }
-            .nameBtn , #subject, #email, #message {
+            #subject, #email, #message {
                 width: 100vw;
             }
-            #name2 {
-                margin: 8px 40px;
+            .nameBtn {
+                width: 95.5vw;
             }
         }
         @media only screen and (max-width: 450px) {

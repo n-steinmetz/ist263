@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms Notes</title>
+</head>
+<body>
+    <h1>Take Out Form:</h1>
+    <form action="post" method="">
+        <label for="fullname">Enter full name:</label> <!--use name element for for element-->
+        <input type="text" name="fullname" id="name"><br>
+        <label for="specialrequest">Enter special request:</label><br>
+        <textarea name="specialrequest" id="specialrequest"></textarea><br>
+        <label for="delivery">Pick-up or Delivery?</label><br>
+        <input type="radio" id="delivery1" name="delivery" value="pick-up" checked> <!--Checked attribute preloads button-->
+        <label for="delivery1">Pick-up</label>
+        <input type="radio" id="delivery2" name="delivery" value="delivery">
+        <label for="delivery2">Delivery</label><br><br>
+        <label for="utencils">Need utencils?</label>
+        <input type="checkbox" id="utencils" name="utencils" value="utencils"><br><br>
+        <label for="region">Delivery Region:</label>
+        <select name="region" id="region">
+            <option value="westcott">Westcott</option>
+            <option value="downtown">Downtown</option>
+            <option value="eastwood">Eastwood</option>
+        </select>
+        <br>
+        <input type="submit" value="submit form">
+    </form>
+</body>
+</html>

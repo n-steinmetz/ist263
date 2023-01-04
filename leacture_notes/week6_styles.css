@@ -1,0 +1,17 @@
+p, ul {
+    color:rebeccapurple;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+/* decendant selector/ no comma */
+/* all the a tags within a paragraph*/
+p a {
+    color: salmon;
+}
+/* # used for an id*/
+#paragraph1 {color: dodgerblue;}
+/* . used for an class*/
+.greentext {color: seagreen}
+a {
+    text-decoration: none;
+}
